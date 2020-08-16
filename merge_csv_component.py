@@ -22,7 +22,7 @@ all_dataframes = []
 # that may come up as the pandas module reads through the values in our csv file.
 for file in selected_files:
     df = pd.read_csv(file, sep=',', dtype="unicode")
-    #df['file'] = file.split('/')[-1]
+    # df['file'] = file.split('/')[-1] #if you want to distinguish which data is from which file include this line
     all_dataframes.append(df)
 
 # once we have looped through all the files and added each dataframe to our empty list
